@@ -1,0 +1,138 @@
+
+
+#nav-btn{
+    display: none;
+}
+@media screen and (max-width: 1240px) {
+    .sqaure {
+        height: auto;
+        width: 40%;
+        margin: 10px;
+        transform: none;
+    }
+
+    .sqaure:nth-child(even) {
+        transform: none;
+    }
+
+    .square-inner {
+        transform: none;
+
+    }
+
+    .creativity-boxes {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        align-content: center;
+        /* width: 1080px; */
+        height: auto;
+        max-width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-list {
+        height: 200px;
+        width: 200px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        background-color: grey;
+        padding: 20px;
+        margin-top: 70px;
+        position: absolute;
+        right: 0;
+        top: 0px;
+        display: none;
+    }
+
+    .nav-list a {
+        margin-left: 0;
+
+    }
+
+    /* .nav-list a:not(:first-child) {
+        display: none;
+    } */
+
+    #nav-btn {
+        float: right;
+        display: block;
+    }
+
+    .nav-list.responsive {
+        display: flex;
+    }
+/* 
+    .navlist.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    } */
+
+    /* .nav-list.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    } */
+
+    .solution-card-wrap {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .m-lr {
+
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .card-r {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .milestone-card {
+
+        width: calc(100% - 80px);
+
+    }
+
+    .card-wraper::after {
+
+        left: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.23);
+
+    }
+
+    .card-r .milestone-card:before {
+        right: unset;
+        left: -57px;
+        top: 10px;
+    }
+
+    .card-l .milestone-card:before {
+        left: -57px;
+        top: 10px;
+    }
+
+    .card-r .milestone-card:after {
+        right: unset;
+        left: -10px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .creativity {
+        padding: 10px;
+    }
+
+    .sqaure {
+
+        width: 80%;
+        margin: 20px;
+    }
+}
